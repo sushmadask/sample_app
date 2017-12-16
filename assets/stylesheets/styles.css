@@ -1526,22 +1526,6 @@ footer{
   display:inline-block;
 }
 
-.status-shortlisted{
-  font-family: FiraSans;
-  font-size: 9px;
-  border-radius: 1px;
-  line-height: 1.5;
-  color:#fff;
-  width: 80% !important;
-  padding: 4px;
-  /*margin-left: 4px;*/
-}
-
-
-.shortlisted {
-  background: #21b784 !important;
-}
-
 .new {
   background: #238d21 !important;
 }
@@ -1643,15 +1627,7 @@ footer{
   height: 18px;
   width: 18px;
 }
-.shortlisted-collapse-text {
-    /*width: 100px!important;*/
-    text-align: center;
-    line-height: 25px;
-    font-size: 14px;
-    padding-left: 5px; 
-    padding-right: 5px;
-    background: grey;
-}
+
 .collapsed-score {
   border-radius:3px;
   border:1px solid #ddd;
@@ -2166,17 +2142,6 @@ tbody.td-width tr td:first-child {
 .region-filter {
   display: inline-block;
   padding: 7px;
-}
-.replace-heading-text-shortlister > span > span > span:first-child > span{
-  visibility: hidden;
-  position: relative;
-} 
-.replace-heading-text-shortlister > span > span > span:first-child > span:after {
-  visibility: visible;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "Select a shortlister";
 }
 
 
