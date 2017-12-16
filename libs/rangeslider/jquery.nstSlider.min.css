@@ -1,0 +1,46 @@
+.is_clickable{cursor:hand;cursor:pointer}
+
+.nstSlider{
+	cursor:hand;
+	cursor:pointer;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	position:relative;
+	width:85%;
+	height:10px;
+	background:#134}
+
+	.nstSlider .leftGrip.gripHighlighted,.nstSlider .rightGrip.gripHighlighted
+	{background:#fff}
+	
+	.nstSlider .leftGrip,.nstSlider .rightGrip{
+		position:absolute;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius:5px;
+		width:10px;height:10px;
+		background:#fff}
+
+.nstSlider .bar{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	position:absolute;
+	background:#fff;
+	height:1.6px;
+	top:4px}
+
+.nstSlider .highlightPanel{
+	-webkit-transition:all 50ms ease-in-out;
+	-moz-transition:all 50ms ease-in-out;
+	-ms-transition:all 50ms ease-in-out;
+	-o-transition:all 50ms ease-in-out;
+	transition:all 50ms ease-in-out;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+	position:absolute;
+	background:#ffffff;
+	height:5px;top:0
+}

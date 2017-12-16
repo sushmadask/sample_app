@@ -1,0 +1,38 @@
+<nav class="header-size header-background-color">
+    <div>
+        <a ui-sref="dashboard">
+            <img class="company-logo" src="assets/images/icons/user7.png" alt="shortlist logo">
+        </a>
+    </div>
+</nav>
+<div class="container">
+    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title  text-center">Sample App</div>
+                <div style="float:right; font-size: 80%; position: relative; top:-10px">
+                </div>
+            </div>
+            <div style="padding-top:30px" class="panel-body">
+                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                <div id="loginform" class="form-horizontal" role="form">
+                    <div class="form-group">                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                            <p class="error" style="font-size: medium;padding-left: 0px;">{{errorMessage}}</p>
+                        </div>
+                        <div class="col-sm-12 controls">
+                            <a id="btn-login" data-ng-click="popup()" class="btn btn-success" style="display:block;">Popup </a>
+                        </div>
+                        <div class="col-sm-12 controls">
+                            <p class="error" style="font-size: medium;padding-left: 0px;">{{errorMessage}}</p>
+                        </div>
+                        <div class="col-sm-12 controls">
+                            <a id="btn-login" data-ng-click="gotoNext()" class="btn btn-success" style="display:block;">Next page </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

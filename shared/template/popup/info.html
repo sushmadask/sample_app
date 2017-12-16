@@ -1,0 +1,143 @@
+<div class="" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading" ng-click="hideDescription()">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <span class="glyphicon glyphicon-folder-close">
+                                </span>Content</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                <a href="" ng-click="showDescription('Articles')">Articles</a>
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-click="showDescription('Articles 1')">
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                        <a href="">Articles 1</a>
+                                    </li>
+                                    <li class="list-group-item" ng-click="showDescription('Articles 2')">
+                                        <span class="glyphicon glyphicon-flash text-success"></span>
+                                        <a href="">Articles 2</a>
+                                    </li>
+                                    <li class="list-group-item" ng-click="showDescription('Articles 3')">
+                                        <span class="glyphicon glyphicon-file text-info"></span>
+                                        <a href="">Articles 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-flash text-success"></span>
+                                <a href="" ng-click="showDescription('News')">News</a>
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-click="showDescription('News 1')">
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                        <a href="">News 1</a>
+                                    </li>
+                                    <li class="list-group-item" ng-click="showDescription('News 2')">
+                                        <span class="glyphicon glyphicon-flash text-success"></span>
+                                        <a href="">News 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item" ng-click="showDescription('Newsletters')">
+                                <span class="glyphicon glyphicon-file text-info"></span>
+                                <a href="">Newsletters</a>
+                            </li>
+
+                            <li class="list-group-item" ng-click="showDescription('Comments')">
+                                <span class="glyphicon glyphicon-comment text-success"></span>
+                                <a href="">Comments</a>
+                                <span class="badge">42</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" ng-click="hideDescription()">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                <span class="glyphicon glyphicon-folder-close">
+                                </span>Reports</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item" ng-click="showDescription('Reports 1')">
+                                <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                <a href="">Reports 1</a>
+                            </li>
+
+                            <li class="list-group-item" ng-click="showDescription('Reports 2')">
+                                <span class="glyphicon glyphicon-flash text-success"></span>
+                                <a href="">Reports 2</a>
+                            </li>
+
+                            <li class="list-group-item" ng-click="showDescription('Reports 3')">
+                                <span class="glyphicon glyphicon-file text-info"></span>
+                                <a href="">Reports 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" ng-click="hideDescription()">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                <span class="glyphicon glyphicon-folder-close">
+                                </span>News Reports</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                <a href="" ng-click="showDescription('Articles')">Articles</a>
+                                <ul class="list-group">
+                                    <li class="list-group-item"  ng-click="showDescription('News Articles 1')">
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                        <a href="">Articles 1</a>
+                                    </li>
+                                    <li class="list-group-item" ng-click="showDescription('News Articles 2')">
+                                        <span class="glyphicon glyphicon-flash text-success"></span>
+                                        <a href="">Articles 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-flash text-success"></span>
+                                <a href="">News</a>
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-click="showDescription('News News 1')">
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                        <a href="">News 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div ng-show="description" class="panel panel-default" style="margin-right:15px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Description</h3>
+                </div>
+                <div class="panel-body">
+                    <p>{{title}}</p>
+                    <div class="alert alert-success">
+                        <h3>Yes! It's {{title}} </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

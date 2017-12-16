@@ -1,0 +1,129 @@
+body {
+    background:#fafafa;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Nite Ot fonts*/
+@font-face {
+    font-family: NettoOT;
+    src: url(../fonts/NettoOT/netto_ot.ttf);
+}
+@font-face {
+    font-family: NettoOT-Bold;
+    src: url(../fonts/NettoOT/netto_ot_bold.ttf);
+}
+@font-face {
+    font-family: NettoOT-Light;
+    src: url(../fonts/NettoOT/netto_ot_light.ttf);
+}
+
+
+/* Fira Sans fonts*/
+@font-face {
+    font-family: FiraSans;
+    src: url(../fonts/FiraSans/FiraSans-Regular.otf);
+}
+@font-face {
+    font-family: FiraSans-Medium;
+    src: url(../fonts/FiraSans/FiraSans-Medium.otf);
+}
+@font-face {
+    font-family: FiraSans-Light;
+    src: url(../fonts/FiraSans/FiraSans-Light.otf);
+}
+
+
+@font-face {
+    font-family: LucidaGrande-Bold;
+    src: url(../fonts/LucidaGrandeBold.ttf);
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../assets/fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #454545;
+    opacity: 0.1;
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+
+.spinner {
+    background-image: url('../images/icons/loading.gif');
+    width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+    margin-left: -1em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
+
+.header-background-color {  
+    background-color: rgb(12, 145, 142);
+}
+.header-size {
+    width: 100%;
+    height: 70px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.company-logo {    
+    margin: 20px auto 20px 34px;
+    width: 30px;
+}
+
+.col-half-offset{
+    margin-left:4%
+}
+.margin-0 {
+    margin:0!important;
+}
+
+.myinput[type="checkbox"]{   
+    background: #ffffff;
+}
+
+.spinnerGIF {
+    background-image: url(https://corpsiteimages.s3.amazonaws.com/loading.gif);
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+/**************** css for scroller ****************/
+::-webkit-scrollbar {
+    width: 7px;
+     height: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #10b1bb;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+   height: 30px;
+    -webkit-box-shadow: inset 0 0 6px #5a66f5;
+}
+
+
+/*********** end here*************/
+
