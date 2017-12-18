@@ -26,7 +26,10 @@
     app.controller('LandingInstanceCtrl', function ($uibModalInstance, $scope, $state) {
         $scope.init = function(){
             $scope.items = ['h1','h2','h3'];
-            $scope.description = false;
+            $scope.rootnode = true;
+            $scope.dial1 = false; 
+            $scope.play = false;
+            $scope.ivr = false;
         }
         $scope.init();        
         
@@ -43,13 +46,35 @@
         };
 
         $scope.showDescription = function(desc){
-            $scope.description = true;
-            $scope.title = desc;
+            switch (desc) {
+                case "rootnode": 
+                $scope.rootnode = true;
+                $scope.dial1 = false;  
+                $scope.play = false;
+                $scope.ivr = false;
+                    
+                    break;
+
+                case "dial1" : $scope.dial1 = true;  $scope.rootnode = false;  $scope.play = false; $scope.ivr = false; break;
+                case "play" : $scope.rootnode = false;
+                $scope.dial1 = false;  $scope.ivr = false;
+                $scope.play = true; break;
+                case "ivr": $scope.ivr = true;
+                $scope.dial1 = false;  $scope.rootnode = false;  $scope.play = false;break;
+            
+                default:
+                    break;
+            }
         };
 
         $scope.hideDescription = function(){
             $scope.description = false;
         };
+
+        $(document).ready(function() {
+            $(".file-tree").filetree();
+        });
+        
     });
 
 })();

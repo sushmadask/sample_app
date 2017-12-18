@@ -1,7 +1,7 @@
 <div class="" style="margin-top: 20px;">
     <div class="row">
-        <div class="col-sm-3 col-md-3">
-            <div class="panel-group" id="accordion">
+        <div class="col-sm-6 col-md-6">
+            <!-- <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading" ng-click="hideDescription()">
                         <h4 class="panel-title">
@@ -124,10 +124,171 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <ul class="file-tree">
+                <li ng-click="showDescription('rootnode')">
+                    <a href="#">Routing plan [Node ID 1234]</a>
+                    <ul>
+                        <li ng-click="showDescription('dial1')">
+                            <a href="#">Dial Pattern Routing</a>
+                            <ul>
+                                <li ng-click="showDescription('play')">
+                                    <a href="#">[Default] play node</a>
+                                    <ul>
+                                        <li ng-click="showDescription('ivr')">
+                                            <a href="#">IVR Routing</a>
+                                            <ul>
+                                                <li ng-click="showDescription('terminate')">
+                                                    <a href="#">Terminate</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li ng-click="showDescription('dial1')">
+                                    <a href="#">Dial Pattern Routing</a>
+                                    <ul>
+                                        <li ng-click="showDescription('terminate')">
+                                            <a href="#link5">D disconnect</a>
+                                        </li>
+                                        <li ng-click="showDescription('terminate')">
+                                            <a href="#link6">S disconnect</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="col-sm-9 col-md-9">
-            <div ng-show="description" class="panel panel-default" style="margin-right:15px;">
+        <div class="col-sm-6 col-md-6">
+            <div ng-show="rootnode" class="panel panel-default" style="margin-right:15px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Routing Plan </h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Dialed pattern routing</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Disconnect</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label>
+                                <input type="radio" name="optradio">Terminate call</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Time based routing</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Extension based routing</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label>
+                                <input type="radio" name="optradio">IVR menu routing</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Pin based routing</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Play</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label>
+                                <input type="radio" name="optradio">Origin based routing</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div ng-show="dial1" class="panel panel-default" style="margin-right:15px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dial Pattern</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        <input id="switch-onColor" type="checkbox" checked data-on-color="primary"> Dialed pattern</input>
+                    </p>
+                    <p>
+                        <input id="switch-onColor" type="checkbox" data-on-color="primary"> Origin based routing</input>
+                    </p>
+                    <p>
+                        <input id="switch-onColor" type="checkbox" data-on-color="primary"> Pin based routing</input>
+                    </p>
+                    <p>
+                        <input id="switch-onColor" type="checkbox" data-on-color="primary"> Time based routing</input>
+                    </p>
+                    <p>
+                        <input id="switch-onColor" type="checkbox" data-on-color="primary"> IVR menu routing</input>
+                    </p>
+                    <p>
+                        <input id="switch-onColor" type="checkbox" data-on-color="primary"> Disconnect</input>
+                    </p>
+                </div>
+            </div>
+
+            <div ng-show="play" class="panel panel-default" style="margin-right:15px;">
+
+                <select style="width:80%;" class="selectpicker" multiple>
+                    <option>Pin based routing</option>
+                    <option>Origin based routing</option>
+                    <option>Time based routing</option>
+                    <option>Dialed pattern</option>
+                    <option>IVR menu routing</option>
+                    <option>Disconnect</option>
+                </select>
+            </div>
+
+            <div ng-show="ivr" class="panel panel-default" style="margin-right:15px;">
+                <form>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Dialed pattern routing</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Disconnect</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optradio">Terminate call</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Time based routing</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Extension based routing</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optradio">IVR menu routing</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Pin based routing</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Play</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optradio">Origin based routing</label>
+                    </div>
+                </form>
+            </div>
+
+            <div ng-show="terminate" class="panel panel-default" style="margin-right:15px;">
                 <div class="panel-heading">
                     <h3 class="panel-title">Description</h3>
                 </div>
