@@ -3,7 +3,7 @@
        
         var settings = { // settings to expose
             animationSpeed      : 'fast',            
-            collapsed           : false,
+            collapsed           : true,
             console             : false
         }
         var methods = {
