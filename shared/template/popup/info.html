@@ -129,7 +129,7 @@
                 <li ng-click="showDescription('rootnode')">
                     <a href="#">Routing plan [Node ID 1234]</a>
                     <ul>
-                        <li ng-click="showDescription('dial1')">
+                        <li ng-click="showDescription('table')">
                             <a href="#">Dial Pattern Routing</a>
                             <ul>
                                 <li ng-click="showDescription('play')">
@@ -146,13 +146,13 @@
                                     </ul>
                                 </li>
                                 <li ng-click="showDescription('dial1')">
-                                    <a href="#">Dial Pattern Routing</a>
+                                    <a href="#">[sadsa]Dial Pattern Routing</a>
                                     <ul>
                                         <li ng-click="showDescription('terminate')">
-                                            <a href="#link5">D disconnect</a>
+                                            <a href="#link5">[D] disconnect</a>
                                         </li>
                                         <li ng-click="showDescription('terminate')">
-                                            <a href="#link6">S disconnect</a>
+                                            <a href="#link6">[S] disconnect</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -288,16 +288,34 @@
                 </form>
             </div>
 
-            <div ng-show="terminate" class="panel panel-default" style="margin-right:15px;">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Description</h3>
-                </div>
-                <div class="panel-body">
-                    <p>{{title}}</p>
-                    <div class="alert alert-success">
-                        <h3>Yes! It's {{title}} </h3>
-                    </div>
-                </div>
+            <div ng-show="table" class="panel panel-default" style="margin-right:15px;">
+                    <div class="panel-heading">
+                            <h3 class="panel-title">Dialed Pattern Routing</h3>
+                        </div>
+                <table class="table table-inverse">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Node Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input id="switch-onColor" type="checkbox" checked data-on-color="primary"></input></th>
+                            <td>Default</td>
+                            <td>All patterns</td>
+                            <td>Disconnect</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input id="switch-onColor" type="checkbox" data-on-color="primary"></input></th>
+                            <td>sadsa</td>
+                            <td>pattern</td>
+                            <td>Disconnect</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

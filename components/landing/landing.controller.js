@@ -30,6 +30,7 @@
             $scope.dial1 = false; 
             $scope.play = false;
             $scope.ivr = false;
+            $scope.table = false;
         }
         $scope.init();        
         
@@ -52,15 +53,22 @@
                 $scope.dial1 = false;  
                 $scope.play = false;
                 $scope.ivr = false;
+                $scope.table = false;
                     
                     break;
 
-                case "dial1" : $scope.dial1 = true;  $scope.rootnode = false;  $scope.play = false; $scope.ivr = false; break;
+                case "dial1" : $scope.dial1 = true; $scope.table = false; $scope.rootnode = false;  $scope.play = false; $scope.ivr = false; break;
                 case "play" : $scope.rootnode = false;
-                $scope.dial1 = false;  $scope.ivr = false;
+                $scope.dial1 = false;  $scope.ivr = false;$scope.table = false;
                 $scope.play = true; break;
-                case "ivr": $scope.ivr = true;
+                case "ivr": $scope.ivr = true;$scope.table = false;
                 $scope.dial1 = false;  $scope.rootnode = false;  $scope.play = false;break;
+
+                case "table":$scope.rootnode = false;
+                $scope.dial1 = false;  
+                $scope.play = false;
+                $scope.ivr = false;
+                $scope.table = true;
             
                 default:
                     break;
